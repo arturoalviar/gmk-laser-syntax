@@ -1,0 +1,17 @@
+{
+  "name": "gmk-laser-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A syntax theme based off MiTo's GMK Laser keycap set",
+  "keywords": [
+    "gmk",
+    "laser",
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/arturoalviar/gmk-laser-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

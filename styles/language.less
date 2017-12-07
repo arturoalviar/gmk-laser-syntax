@@ -1,0 +1,260 @@
+// Syntax styles
+
+.syntax--comment {
+  color: @syntax-comment-color;
+}
+
+.syntax--keyword {
+  background-color: @laser-indigo;
+  color: @laser-pink;
+
+  &.syntax--control {
+    color: @laser-green;
+  }
+
+  &.syntax--operator {
+    background-color: @laser-indigo;
+    color: @laser-pink;
+    &.syntax--assignment {
+      background-color: transparent;
+      color: @white;
+    }
+  }
+
+  &.syntax--other.syntax--special-method {
+    color: @laser-cyan;
+  }
+
+  &.syntax--other.syntax--unit {
+    color: @laser-green;
+  }
+}
+
+.syntax--storage {
+  background-color: @laser-indigo;
+  color: @laser-cyan;
+}
+
+.syntax--constant {
+  color: @white;
+
+  &.syntax--character.syntax--escape {
+    color: @laser-cyan;
+  }
+
+  &.syntax--numeric {
+    background-color: @laser-indigo;
+    color: @laser-green;
+  }
+
+  &.syntax--other.syntax--color {
+    color: @white;
+  }
+
+  &.syntax--other.syntax--symbol {
+    color: @laser-green;
+  }
+}
+
+.syntax--variable {
+  background-color: @laser-indigo;
+  color: @laser-cyan;
+
+  &.syntax--interpolation {
+    background-color: @laser-purple;
+    color: @laser-green;
+  }
+
+  &.syntax--parameter.syntax--function {
+    background-color: @laser-purple;
+    color: @laser-cyan;
+  }
+  &.syntax--object {
+    color: @laser-cyan;
+  }
+  &.syntax--default {
+    background-color: @laser-indigo;
+    color: @laser-green;
+  }
+}
+
+.syntax--invalid.syntax--illegal {
+  background-color: @laser-pink;
+  color: @white;
+}
+
+.syntax--string {
+  background-color: @laser-purple;
+  color: @laser-cyan;
+
+  &.syntax--punctuation.syntax--definition {
+    color: @laser-cyan;
+  }
+
+  &.syntax--regexp {
+    color: @laser-cyan;
+
+    .syntax--source.syntax--ruby.syntax--embedded {
+      color: @laser-orange;
+    }
+  }
+
+  &.syntax--other.syntax--link {
+    border-bottom: 2px solid @laser-green;
+    color: @laser-green;
+  }
+
+  .indent-guide {
+    background-color: @syntax-background-color;
+  }
+}
+
+
+
+.syntax--punctuation {
+  &.syntax--definition {
+
+    &.syntax--variable,
+    &.syntax--parameters,
+    &.syntax--array {
+      color: @syntax-text-color;
+    }
+
+    &.syntax--heading,
+    &.syntax--identity {
+      color: @laser-cyan;
+    }
+
+    &.syntax--bold {
+      color: @laser-pink;
+      font-weight: bold;
+    }
+
+    &.syntax--italic {
+      color: @laser-orange;
+      font-style: italic;
+    }
+  }
+}
+
+.syntax--support {
+  &.syntax--class {
+    color: @white;
+  }
+
+  &.syntax--function  {
+    background-color: @laser-indigo;
+    color: @laser-pink;
+
+    &.syntax--any-method {
+      background-color: @laser-indigo;
+      color: @laser-pink;
+    }
+  }
+  &.syntax--type {
+    background-color: @laser-indigo;
+    color: @laser-pink;
+  }
+}
+
+.syntax--entity {
+  &.syntax--name.syntax--function {
+    background-color: @laser-indigo;
+    color: @laser-pink;
+  }
+  &.syntax--name.syntax--type {
+    color: inherit;
+  }
+
+  &.syntax--other.syntax--inherited-class {
+    color: @laser-green;
+  }
+  &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
+    color: @white;
+  }
+
+  &.syntax--name.syntax--section {
+    color: @laser-orange;
+  }
+
+  &.syntax--name.syntax--tag {
+    background-color: @laser-purple;
+    color: @laser-orange;
+  }
+
+  &.syntax--other.syntax--attribute-name {
+    background-color: @laser-indigo;
+    color: @laser-cyan;
+
+    &.syntax--id {
+      b//ackground-color: @laser-indigo;
+      color: @laser-cyan;
+    }
+  }
+}
+
+.syntax--meta {
+  &.syntax--class {
+    color: @white;
+  }
+
+  &.syntax--link {
+    color: @white;
+  }
+
+  &.syntax--require {
+    color: @laser-cyan;
+  }
+
+  &.syntax--selector {
+    color: @white;
+  }
+
+  &.syntax--separator {
+    background-color: @gray;
+    color: @syntax-text-color;
+  }
+}
+
+.syntax--none {
+  color: @syntax-text-color;
+}
+
+
+.syntax--markup {
+
+  &.syntax--changed {
+    color: @laser-purple;
+  }
+
+  &.syntax--deleted {
+    color: @laser-pink;
+  }
+
+
+  &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+    color: @laser-cyan;
+  }
+
+  &.syntax--inserted {
+    color: @laser-green;
+  }
+
+  &.syntax--list {
+    color: @laser-pink;
+  }
+
+  &.syntax--quote {
+    color: @laser-orange;
+  }
+
+  &.syntax--link {
+    border-bottom: 2px solid @laser-purple;
+  }
+
+  &.syntax--raw,
+  &.syntax--code {
+    background-color: @laser-indigo;
+    color: @white;
+  }
+}

@@ -1,0 +1,40 @@
+.syntax--source.syntax--gfm {
+  .syntax--markup {
+  -webkit-font-smoothing: auto;
+    &.syntax--heading {
+      background-color: @laser-purple;
+      color: @laser-pink;
+    }
+
+    &.syntax--bold {
+      background-color: @laser-indigo;
+      color: @laser-pink;
+      font-weight: bold;
+    }
+
+    &.syntax--italic {
+      color: @laser-orange;
+      font-style: italic;
+    }
+
+    &.syntax--strike {
+      color: @laser-cyan;
+      text-decoration: line-through;
+    }
+
+}
+  .syntax--link {
+    border-bottom: 2px solid @laser-purple;
+    color: @laser-pink;
+  }
+
+  .syntax--hr {
+    background-color: @laser-purple;
+    color: @laser-cyan;
+  }
+
+  .syntax--table {
+    background-color: @laser-indigo;
+    color: @laser-orange;
+  }
+}
