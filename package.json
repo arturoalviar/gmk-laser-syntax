@@ -1,7 +1,7 @@
 {
   "name": "gmk-laser-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A syntax theme based off MiTo's GMK Laser keycap set",
   "keywords": [
     "gmk",
